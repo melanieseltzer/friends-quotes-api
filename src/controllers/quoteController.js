@@ -5,12 +5,12 @@ exports.getHomepage = (req, res) => {
 };
 
 exports.getAllQuotes = (req, res) => {
-  res.status(200).json(quotes);
+  res.status(200).send(quotes);
 };
 
 exports.getRandomQuote = (req, res) => {
   const item = quotes[Math.floor(Math.random() * quotes.length)];
-  res.status(200).json(item);
+  res.status(200).send(item);
 };
 
 exports.getNumberOfQuotes = (req, res) => {
@@ -25,5 +25,5 @@ exports.getNumberOfQuotes = (req, res) => {
   // after shuffling initial array
   const items = newArr.sort(() => 0.5 - Math.random()).slice(0, count);
 
-  res.status(200).json(items);
+  res.status(200).send(items);
 };
