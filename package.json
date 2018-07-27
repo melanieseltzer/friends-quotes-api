@@ -1,7 +1,8 @@
 {
   "name": "friends-quotes-api",
   "version": "1.0.0",
-  "description": "A Node/Express quote API for the TV show Friends.",
+  "author": "Melanie Seltzer <melleh11@gmail.com>",
+  "description": "A simple quotes API for the TV show Friends, using Node and Express.",
   "repository": "https://github.com/melanieseltzer/friends-quotes-api",
   "main": "index.js",
   "scripts": {
@@ -14,7 +15,6 @@
     "express",
     "api"
   ],
-  "author": "Melanie Seltzer <melleh11@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
