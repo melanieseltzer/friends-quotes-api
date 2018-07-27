@@ -10,7 +10,7 @@
     "build": "npm run clean && npm run build-babel",
     "clean": "rm -rf dist && mkdir dist",
     "build-babel": "babel -d ./dist ./src",
-    "dev": "nodemon src --exec babel-node",
+    "dev": "npm run lint && nodemon src --exec babel-node",
     "lint": "eslint src"
   },
   "keywords": [
