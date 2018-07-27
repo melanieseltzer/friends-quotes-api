@@ -23,21 +23,21 @@ Quotes are returned in the following format:
 
 ### `GET /quotes`
 
-https://friends-quotes-api.herokuapp.com/quotes
-
 Returns an array of all quotes.
+
+https://friends-quotes-api.herokuapp.com/quotes
 
 ### `GET /quotes/random`
 
-https://friends-quotes-api.herokuapp.com/quotes/random
-
 Returns a single quote object which is random.
+
+https://friends-quotes-api.herokuapp.com/quotes/random
 
 ### `GET /quotes/{num}`
 
-E.g. https://friends-quotes-api.herokuapp.com/quotes/4 (returns 4 random quotes)
+Returns an array of quotes (which are randomized) with length {num}.
 
-Returns a random array of quotes with length {num}.
+E.g. https://friends-quotes-api.herokuapp.com/quotes/4 (returns 4 random quotes)
 
 ## 🚀 Local Development
 
