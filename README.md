@@ -2,7 +2,7 @@
 
 > *"Joey doesn't share food!"*
 
-A simple Node/Express quote API for the TV show *Friends* 😄
+Simple Node API to return quotes from the tv show Friends 📺 Built with Express.
 
 ## Host
 
