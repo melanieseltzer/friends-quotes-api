@@ -1,5 +1,7 @@
+import { quotes } from '../data/quotes';
+
 exports.getAllQuotes = (req, res) => {
-  res.send('Get all quotes');
+  res.json(quotes);
 };
 
 exports.getRandomQuote = (req, res) => {

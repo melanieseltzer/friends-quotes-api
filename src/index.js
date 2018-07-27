@@ -1,14 +1,9 @@
-const bodyParser = require('body-parser');
-const express = require('express');
-const path = require('path');
-const routes = require('./routes/index');
+import express from 'express';
+import routes from './routes/index';
 
 const app = express();
 
-// Body-parser middleware
-app.use(bodyParser.json());
-
-// Our API routes
+// API routes
 app.use('/', routes);
 
 // Set port environment variable PORT or 3000

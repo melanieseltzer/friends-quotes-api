@@ -20,7 +20,7 @@
     "no-unused-vars": [
       "warn",
       {
-        "argsIgnorePattern": "res|next|^err"
+        "argsIgnorePattern": "req|res|next|^err"
       }
     ],
     "prefer-const": [
