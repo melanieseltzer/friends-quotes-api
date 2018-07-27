@@ -29,7 +29,7 @@ https://friends-quotes-api.herokuapp.com/quotes
 
 ### `GET /quotes/random`
 
-Returns a single quote object which is random.
+Returns a single random quote.
 
 https://friends-quotes-api.herokuapp.com/quotes/random
 
@@ -37,7 +37,7 @@ https://friends-quotes-api.herokuapp.com/quotes/random
 
 Returns an array of quotes (which are randomized) with length {num}.
 
-E.g. https://friends-quotes-api.herokuapp.com/quotes/4 (returns 4 random quotes)
+https://friends-quotes-api.herokuapp.com/quotes/4 (returns 4 random quotes)
 
 ## 🚀 Local Development
 
