@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1 Friends quotes API
+  img(src="/friends.jpg" alt="Friends")
+  
+  h2 Endpoints
+
+  .endpoint
+    h3 GET /quotes
+
+    p Returns an array of all quotes.
+
+    a(href="https://friends-quotes-api.herokuapp.com/quotes") https://friends-quotes-api.herokuapp.com/quotes
+
+  .endpoint
+    h3 GET /quotes/random
+
+    p Returns a single random quote.
+
+    a(href="https://friends-quotes-api.herokuapp.com/quotes/random") https://friends-quotes-api.herokuapp.com/quotes/random
+
+  .endpoint
+    h3 GET /quotes/{num}
+
+    p Returns an array of quotes (which are randomized) with length {num}.
+
+    p For example, this will return 4 random quotes:
+
+    a(href="https://friends-quotes-api.herokuapp.com/quotes/4") https://friends-quotes-api.herokuapp.com/quotes/4

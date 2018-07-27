@@ -1,10 +1,18 @@
 import express from 'express';
+import path from 'path';
 import routes from './routes/index';
 
 // Set port environment variable PORT or 3000
 const port = process.env.PORT || 8080;
 
 const app = express();
+
+// View for the homepage
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
+// Static files live here
+app.use(express.static(path.join(__dirname, '../public')));
 
 // API routes
 app.use('/', routes);

@@ -9,7 +9,7 @@
     "start": "npm run build && node ./dist/index.js",
     "build": "npm run clean && npm run build-babel",
     "clean": "rm -rf dist && mkdir dist",
-    "build-babel": "babel -d ./dist ./src",
+    "build-babel": "babel -d ./dist ./src --copy-files",
     "dev": "npm run lint && nodemon src --exec babel-node",
     "lint": "eslint src"
   },
@@ -20,7 +20,8 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.54",

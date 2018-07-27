@@ -1,5 +1,9 @@
 import { quotes } from '../data/quotes';
 
+exports.getHomepage = (req, res) => {
+  res.render('index', { title: 'Friends Quotes API' });
+};
+
 exports.getAllQuotes = (req, res) => {
   res.status(200).json(quotes);
 };
