@@ -16,7 +16,7 @@ Returns a single random quote.
 
 `GET /quotes/{num}`
 
-Returns a specific number of quotes, per user input.
+Returns {num} of quotes (which are randomized).
 
 ## 🚀 Local Development
 
