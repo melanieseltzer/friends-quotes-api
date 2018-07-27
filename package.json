@@ -11,7 +11,8 @@
     "clean": "rm -rf dist && mkdir dist",
     "build-babel": "babel -d ./dist ./src",
     "dev": "npm run lint && nodemon src --exec babel-node",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "postinstall": "npm run start"
   },
   "keywords": [
     "node",
