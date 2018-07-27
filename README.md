@@ -1,22 +1,43 @@
-# Friends Quotes API
+# Friends Quotes API [![Build Status](https://travis-ci.org/melanieseltzer/friends-quotes-api.svg?branch=master)](https://travis-ci.org/melanieseltzer/friends-quotes-api)
 
 > *"Joey doesn't share food!"*
 
-A simple quotes API for the TV show *Friends*, using Node and Express 😄
+A simple Node/Express quote API for the TV show *Friends* 😄
 
-## 🤖 API
+## Host
 
-`GET /quotes`
+https://friends-quotes-api.herokuapp.com
 
-Returns all quotes in the array.
+## API
 
-`GET /quotes/random`
+Quotes are returned in the following format:
 
-Returns a single random quote.
+```
+[
+  {
+    quote: "...",
+    character: "..."
+  }
+]
+```
 
-`GET /quotes/{num}`
+### `GET /quotes`
 
-Returns {num} of quotes (which are randomized).
+https://friends-quotes-api.herokuapp.com/quotes
+
+Returns an array of all quotes.
+
+### `GET /quotes/random`
+
+https://friends-quotes-api.herokuapp.com/quotes/random
+
+Returns a single quote object which is random.
+
+### `GET /quotes/{num}`
+
+E.g. https://friends-quotes-api.herokuapp.com/quotes/4 (returns 4 random quotes)
+
+Returns a random array of quotes with length {num}.
 
 ## 🚀 Local Development
 
