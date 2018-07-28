@@ -6,12 +6,13 @@
   "repository": "https://github.com/melanieseltzer/friends-quotes-api",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./dist/index.js",
+    "start": "npm run test && npm run build && node ./dist/index.js",
     "build": "npm run clean && npm run build-babel",
     "clean": "rm -rf dist && mkdir dist",
     "build-babel": "babel -d ./dist ./src --copy-files",
-    "dev": "npm run lint && nodemon src --exec babel-node",
-    "lint": "eslint src"
+    "dev": "npm run lint && npm run test && nodemon src --exec babel-node",
+    "lint": "eslint src",
+    "test": "mocha --require @babel/register --require chai/register-should test/**/*.js --exit"
   },
   "keywords": [
     "node",
@@ -28,13 +29,17 @@
     "@babel/core": "^7.0.0-beta.54",
     "@babel/node": "^7.0.0-beta.54",
     "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/register": "^7.0.0-beta.54",
     "babel-eslint": "^8.2.6",
+    "chai": "^4.1.2",
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-prettier": "^2.6.2",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.3",
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "supertest": "^3.1.0"
   }
 }

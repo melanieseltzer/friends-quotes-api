@@ -30,3 +30,5 @@ app.use('/', routes);
 app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);
 });
+
+module.exports = app;
