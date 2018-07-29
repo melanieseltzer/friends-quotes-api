@@ -67,5 +67,12 @@ describe('endpoints', () => {
         .expect(length)
         .expect(200, done);
     });
+    it("should not be able to return more quotes than what's in the original quotes array", done => {
+      const quoteCount = res => res.body.should.have.lengthOf(res.body.length);
+      request(app)
+        .get('/quotes/1000')
+        .expect(quoteCount)
+        .expect(200, done);
+    });
   });
 });
