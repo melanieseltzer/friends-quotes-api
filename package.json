@@ -12,7 +12,7 @@
     "build-babel": "babel -d ./dist ./src --copy-files",
     "dev": "npm run lint && npm run test && nodemon src --exec babel-node",
     "lint": "eslint src",
-    "test": "mocha --require @babel/register --require chai/register-should test/**/*.js --exit"
+    "test": "nyc mocha --require @babel/register --require chai/register-should test/**/*.js --exit"
   },
   "keywords": [
     "node",
@@ -39,6 +39,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.3",
+    "nyc": "^12.0.2",
     "prettier": "^1.13.7",
     "supertest": "^3.1.0"
   }
